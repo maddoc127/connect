@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class connect {
+public class connect_four {
 
 public static  int row = 6;
 public static  int column = 7;
@@ -40,7 +40,7 @@ public static int dropDisc(char player, char board[][]){
     for (int i = row - 1; i >= 0; i--) {
 
         if (board[i][next_move] == empty) {
-            connect.board[i][next_move] = player;
+            connect_four.board[i][next_move] = player;
             return i;
         }
     }
